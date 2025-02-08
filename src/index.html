@@ -13,7 +13,7 @@
 
 <body>
     <div class="grid grid-cols-10">
-        <div class="col-start-1 col-end-3 bg-[#4f39f6] h-[100%]">
+        <div class="hidden lg:block col-start-1 col-end-3 bg-[#4f39f6] h-full">
             <div class="mb-6 p-5">
                 <img class="w-12 h-12" alt="Your Company"
                     src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=white">
@@ -141,48 +141,62 @@
             </div>
         </div>
 
-        <div class="col-start-3 col-end-11">
-            <div class="grid grid-rows-12 h-[100%]">
-                <div class="row-start-1 row-end-2 grid grid-cols-11 items-center shadow-lg">
-                    <div class="flex col-start-1 col-end-4 text-gray-600 ml-10">
-                        <svg class="w-6 h-6 text-gray-400 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                            fill="currentColor" aria-hidden="true" data-slot="icon" class="d el ey om aex bar">
-                            <path fill-rule="evenodd"
-                                d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        <input type="text" class="font-medium outline-0 ml-4 text-[18px]" placeholder="Search">
-                    </div>
-                    <div class="flex items-center col-start-9 col-end-12 justify-end">
-                        <svg class="w-6 h-6 text-gray-400 hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"
-                            data-slot="icon" class="on">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0">
-                            </path>
-                        </svg>
-                        <div class="bg-gray-300 w-[1px] h-[25px] mx-5"></div>
-                        <div class="flex">
-                            <img src="../images/photo_2024-07-04_13-50-35.jpg" class="w-8 h-8 rounded-[50%]" alt="">
-                            <p class="flex items-center mx-5">
-                                <span class="cursor-default">
-                                    Radin
-                                </span>
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20"
-                                        fill="currentColor" aria-hidden="true" data-slot="icon" class="kg om bar">
-                                        <path fill-rule="evenodd"
-                                            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </p>
+        <div class="col-start-1 lg:col-start-3 col-end-11 ">
+            <div class="grid grid-rows-12 h-full">
+                <div class="row-start-1 row-end-2 grid  items-center shadow-lg px-9">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="blcok lg:hidden items-center lg:col-start-1 lg:col-end-3">
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
+                                    class="on">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                                </svg>
+                            </div>
+                            <div class="bg-gray-300 w-[1px] h-[25px] ml-10 block lg:hidden "></div>
+                            <form class="flex text-gray-600 ml-10">
+                                <svg class="w-6 h-6 text-gray-400 mt-0.5" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"
+                                    class="d el ey om aex bar">
+                                    <path fill-rule="evenodd"
+                                        d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <input type="text" class="font-medium outline-0 ml-4 text-[18px]" placeholder="Search">
+                            </form>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-gray-400 hover:text-gray-500 mr-5 lg:mr-0" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true" data-slot="icon" class="on">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0">
+                                </path>
+                            </svg>
+                            <div class="hidden lg:flex bg-gray-300 w-[1px] h-[25px] mx-5"></div>
+                            <div class="flex">
+                                <img src="../images/photo_2024-07-04_13-50-35.jpg" class="w-8 h-8 rounded-[50%]" alt="">
+                                <p class="hidden lg:flex items-center mx-5">
+                                    <span class="cursor-default">
+                                        Radin
+                                    </span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20"
+                                            fill="currentColor" aria-hidden="true" data-slot="icon" class="kg om bar">
+                                            <path fill-rule="evenodd"
+                                                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row-start-2 row-end-13 p-15">
-                    <div class="w-[100%] h-[100%] border-2 border-dashed border-gray-400 ">
-                        
+                    <div class="w-full h-[43rem] lg:h-full border-2 border-dashed border-gray-400 rounded-lg ">
+
                     </div>
                 </div>
             </div>
