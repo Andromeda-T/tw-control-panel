@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "w": "npx tailwindcss -i ./src/css/style.css -o ./src/main.css --watch"
+  }
+}
