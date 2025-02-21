@@ -21,10 +21,11 @@ function Changer() {
     }
 }
 
-
-//side bar
 window.addEventListener('resize', Changer)
 document.addEventListener('DOMContentLoaded', Changer)
+
+//side bar
+
 
 
 var item = document.getElementById('item')
